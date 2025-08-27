@@ -6,11 +6,14 @@
   /* Admin Colors */
   --bg-dark: oklch(92.494% 0.00011 271.152);
   --bg-light: oklch(100% 0.00011 271.152);
-  --bg-first: oklch(69.619% 0.19416 23.595);
-  --bg-second: oklch(88.377% 0.1722 93.522);
-  --bg-third: oklch(59.411% 0.23836 28.728);
-  --text-from:oklch(100% 0.00011 271.152);
-  --text-to: oklch(100% 0.00011 271.152);
+  --bg-first: oklch(75.36% 0.14286 295.658);
+  --bg-second: oklch(82.848% 0.15825 324.989);
+  --bg-third: oklch(93.1% 0.07677 203.105);
+  --text-from: oklch(62.912% 0.25647 29.075);
+  --text-to: oklch(59.318% 0.13157 21.849);
+  --text-primary: oklch(19.896% 0.04242 21.611);
+  --gradient-from: oklch(60.042% 0.24051 7.825);
+  --gradient-to: oklch(56.551% 0.23207 29.223);
 }
 
 @theme inline {
@@ -27,6 +30,9 @@
   --color-bg-third: var(--bg-third);
   --color-text-from: var(--text-from);
   --color-text-to: var(--text-to);
+  --color-text-primary: var(--text-primary);
+  --color-gradient-from: var(--gradient-from);
+  --color-gradient-to: var(--gradient-to);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,13 +42,13 @@
   }
 }
 
-
 @theme {
   --animate-pulse: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {

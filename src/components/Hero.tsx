@@ -1,4 +1,6 @@
-'use client'
+"use client";
+
+import { ArrowBigDownIcon, ArrowDown } from "lucide-react";
 
 export function Hero() {
   return (
@@ -6,27 +8,28 @@ export function Hero() {
       {/* Background animation */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -inset-10 opacity-50">
-          <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
-          <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-cyan-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-2000"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-4000"></div>
+          <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-bg-first rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+          <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-bg-second rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-2000"></div>
+          <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-bg-third rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-4000"></div>
         </div>
       </div>
 
       <div className="relative z-10 text-center max-w-4xl mx-auto">
         <div className="mb-8">
-          <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/80 text-sm font-medium mb-8 border border-white/20">
+          <div className="inline-flex items-center px-4 py-2 bg-black/10 backdrop-blur-sm rounded-full text-text-primary/80 text-sm font-medium mb-8 border border-black/20">
             🚀 Something amazing is brewing
           </div>
-          
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+
+          <h1 className="text-5xl md:text-7xl font-bold text-text-primary mb-6 leading-tight">
             We&apos;re
-            <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent block">
+            <span className="bg-gradient-to-r from-text-from to-text-to bg-clip-text text-transparent block">
               Coming Soon
             </span>
           </h1>
-          
-          <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Get ready for the next generation of digital innovation. We&apos;re crafting something extraordinary just for you.
+
+          <p className="text-xl md:text-2xl text-text-primary/80 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Get ready for the next generation of digital innovation. We&apos;re
+            crafting something extraordinary just for you.
           </p>
         </div>
 
@@ -48,11 +51,21 @@ export function Hero() {
         </div> */}
 
         <div className="animate-bounce">
-          <svg className="w-6 h-6 mx-auto text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          <svg
+            className="w-6 h-6 mx-auto text-text-primary/60"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
           </svg>
         </div>
       </div>
     </section>
-  )
+  );
 }
