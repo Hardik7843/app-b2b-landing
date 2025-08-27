@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  /* Admin Colors */
+  --bg-dark: oklch(92.494% 0.00011 271.152);
+  --bg-light: oklch(100% 0.00011 271.152);
+  --bg-first: oklch(69.619% 0.19416 23.595);
+  --bg-second: oklch(88.377% 0.1722 93.522);
+  --bg-third: oklch(59.411% 0.23836 28.728);
+  --text-from:oklch(100% 0.00011 271.152);
+  --text-to: oklch(100% 0.00011 271.152);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* My Customized Colors */
+  --color-bg-dark: var(--bg-dark);
+  --color-bg-light: var(--bg-light);
+  --color-bg-first: var(--bg-first);
+  --color-bg-second: var(--bg-second);
+  --color-bg-third: var(--bg-third);
+  --color-text-from: var(--text-from);
+  --color-text-to: var(--text-to);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+
+@theme {
+  --animate-pulse: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
