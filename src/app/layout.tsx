@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "56 Bhogg",
-  description: "Next Generation Hotel Management Software. Catering Modern Requirements",
+  description: "Next Generation Catering Management Software. Catering Modern Requirements",
 };
 
 export default function RootLayout({
